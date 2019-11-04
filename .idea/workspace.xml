@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="170">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding>
                 <element signature="n#style#1;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#noscript#0;n#head#0;n#html#0;n#!!top" />
@@ -36,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="198" lean-forward="true" selection-start-line="198" selection-end-line="198" />
+            <state relative-caret-position="139">
+              <caret line="170" lean-forward="true" selection-end-line="206" />
             </state>
           </provider>
         </entry>
@@ -55,8 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>input</find>
-      <find>.advantage</find>
       <find>.topDescriptions</find>
       <find>flex-shrink</find>
       <find>war</find>
@@ -85,6 +83,8 @@
       <find>.advantages {</find>
       <find>for</find>
       <find>title</find>
+      <find>http://localhost:3000/script.js</find>
+      <find>meta</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,12 +176,27 @@
       <updated>1571921273651</updated>
       <workItem from="1571921274756" duration="77548000" />
       <workItem from="1572417668352" duration="61742000" />
-      <workItem from="1572858217244" duration="1995000" />
+      <workItem from="1572858217244" duration="3712000" />
     </task>
+    <task id="LOCAL-00001" summary="cirrect title">
+      <created>1572860957908</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572860957908</updated>
+    </task>
+    <task id="LOCAL-00002" summary="cirrect path to script.js">
+      <created>1572861219913</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572861219913</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141285000" />
+    <option name="totallyTimeSpent" value="143002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -209,6 +224,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cirrect title" />
+    <MESSAGE value="cirrect path to script.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="cirrect path to script.js" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -231,15 +251,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="198" lean-forward="true" selection-start-line="198" selection-end-line="198" />
+        <state relative-caret-position="139">
+          <caret line="170" lean-forward="true" selection-end-line="206" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="170">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding>
             <element signature="n#style#1;n#head#0;n#html#0;n#!!top" />
             <element signature="n#noscript#0;n#head#0;n#html#0;n#!!top" />
