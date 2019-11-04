@@ -5,7 +5,7 @@
     <title>Карта рассрочки КартаFUN</title>
     <link rel="canonical" href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/"> <!-- !!! СКОРЕЕ ВСЕГО НЕОБХОДИМА ССЫЛКА НА ЭТОТ ЖЕ ФАЙЛ-->
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1.0">
-    <meta name="amp-script-src" content="sha384-To5njwH_tIpxgd3L_RX8M3owonrhkpKRe3R9ou0aoKT13PSjyIsPqnaQuVGa7Ou2">
+    <meta name="amp-script-src" content="sha384-AkVhN8vmu-lbNk8wktC5YVRuCZUeb9zC3cV2flv3Mn6D5AJmLdXTSRrkRN9tLgd8">
     <style amp-custom>
         .wrapper {
             display: flex;
@@ -728,12 +728,12 @@
             <script type=text/plain target=amp-script id=myScript>
 
                 let URL = "https://www.bps-sberbank.by/ccservice/CallBackOrder";
-                let maxBookingTime = 21; // максимальное время работы колл-центра
-                let minBookingTime = 9; // минимальное время работы колл-центра
+                let maxBookingTime = 21;
+                let minBookingTime = 9;
                 let divBookingTime = document.getElementById('bookingTime');
-                let time = document.getElementById('time'); // появляющийся блок
+                let time = document.getElementById('time');
                 let setBookingTime = document.getElementById('setBookingTime');
-                let choosenTime; //выбранное для звонка время
+                let choosenTime;
                 let firstName = document.getElementById('firstName');
                 let lastName = document.getElementById('lastName');
                 let mobile = document.getElementById('mobile');
@@ -749,7 +749,7 @@
                 firstName.onblur = () => checkValues(firstName);
                 lastName.onblur = () => checkValues(lastName);
                 mobile.onblur = () => checkValues(mobile);
-                agreement.onclick = () => {// "согласен с обработкой персональных данных"
+                agreement.onclick = () => {
                     if (bookingAnswer) bookingAnswer.style.display = 'none';
                     if (reserveBookingAnswer) reserveBookingAnswer.style.display = 'none';
                     if (isAgreementChecked) {
@@ -790,14 +790,14 @@
                     }
                 }
 
-                function str0l(val, len) { // функция добавляет нули до нужного формата числа
+                function str0l(val, len) {
                     let strVal = val.toString();
                     while (strVal.length < len)
                         strVal = '0' + strVal;
                     return strVal;
                 }
 
-                let addBookingTime = (startTime, day) => {// функция добавляет время для бронирования звонка
+                let addBookingTime = (startTime, day) => {
                     let startBookingHour = startTime;
                     while (startBookingHour < maxBookingTime) {
                         let div = document.createElement('div');
@@ -813,26 +813,25 @@
                             choosenTime = div.attribute;
                             time.style.display = 'none';
                             setBookingTime.innerHTML = timeText;
-                            //buttonDisabled ();
                         }
                         time.appendChild(div);
                         startBookingHour++;
                     }
                 }
 
-                if ( new Date().getHours() + 1 < maxBookingTime ) {// проверка, сколько времени осталось сегодня до конца работы колл-центра
+                if ( new Date().getHours() + 1 < maxBookingTime ) {
                     let todaySpan = document.createElement('span');
                     todaySpan.appendChild( document.createTextNode("Сегодня") );
                     time.appendChild(todaySpan);
                     let startTime = new Date().getHours() > minBookingTime ? new Date().getHours() + 1 : minBookingTime;
                     addBookingTime(startTime, 0);
                 }
-                let tomottowSpan = document.createElement('span');// время бронирования звонка на завтра
+                let tomottowSpan = document.createElement('span');
                 tomottowSpan.appendChild( document.createTextNode("Завтра") );
                 time.appendChild(tomottowSpan);
                 addBookingTime(minBookingTime, 1);
 
-                divBookingTime.onclick = () => {// открывается меню с временем для звонка
+                divBookingTime.onclick = () => {
                     if (time.style.display !== 'block') {
                         time.style.display = 'block';
                     } else {
@@ -851,7 +850,7 @@
                 let answerTimer = 0;
                 let showReserveAnswer = false;
 
-                button.onclick = () => {  // запрос (отправка) на сервер с временем заказа звонка
+                button.onclick = () => {
 
                     if (
                         firstName.value.length > 0 &&
