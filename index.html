@@ -511,12 +511,15 @@
             body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
         </style>
     </noscript>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script> <!-- подключение аналитики -->
     <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script> <!-- подключение кастомных скриптов -->
     <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script> <!--скрипт для модального окна-->
-    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script> <!--скрипт для формы-->
     <script async src="https://cdn.ampproject.org/v0.js"></script> <!--указывает и загружает библиотеку AMP JS-->
 </head>
 <body>
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-KGLQLPF" data-credentials="include">
+    </amp-analytics>
+
     <div class="wrapper">
         <div class="container">
             <div class="header">

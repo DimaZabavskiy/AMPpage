@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cb1549b-4913-4add-b2e1-73385a0fa1c7" name="Default Changelist" comment="">
+    <list default="true" id="0cb1549b-4913-4add-b2e1-73385a0fa1c7" name="Default Changelist" comment="correct analytics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -19,15 +19,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="493">
+              <caret line="523" column="31" lean-forward="true" selection-start-line="523" selection-start-column="31" selection-end-line="523" selection-end-column="31" />
               <folding>
-                <element signature="n#style#1;n#head#0;n#html#0;n#!!top" />
-                <element signature="n#noscript#0;n#head#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -59,7 +54,6 @@
       <find>ampScript</find>
       <find>sample-form</find>
       <find>example</find>
-      <find>amp-form</find>
       <find>err</find>
       <find>error</find>
       <find>bookingAnswer</find>
@@ -82,9 +76,10 @@
       <find>buttonDisabled</find>
       <find>button</find>
       <find>console.log</find>
-      <find>setDisplayBlock</find>
       <find>maxBookingTime</find>
       <find>minBookingTime</find>
+      <find>setDisplayBlock</find>
+      <find>amp-form</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,7 +112,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,6 +123,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,7 +173,8 @@
       <workItem from="1572417668352" duration="61742000" />
       <workItem from="1572858217244" duration="7175000" />
       <workItem from="1573454198968" duration="249000" />
-      <workItem from="1573454461918" duration="3757000" />
+      <workItem from="1573454461918" duration="4962000" />
+      <workItem from="1573462900258" duration="5697000" />
     </task>
     <task id="LOCAL-00001" summary="cirrect title">
       <created>1572860957908</created>
@@ -222,11 +218,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572866975131</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="correct button">
+      <created>1573458416453</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573458416453</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150471000" />
+    <option name="totallyTimeSpent" value="157373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -246,6 +249,7 @@
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32963374" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -257,7 +261,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cirrect title" />
     <MESSAGE value="cirrect path to script.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="cirrect path to script.js" />
+    <MESSAGE value="correct button" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct button" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/style.css">
@@ -279,25 +284,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="523" column="31" lean-forward="true" selection-start-line="523" selection-start-column="31" selection-end-line="523" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#1;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#noscript#0;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
