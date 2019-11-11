@@ -5,7 +5,7 @@
     <title>Карта рассрочки КартаFUN</title>
     <link rel="canonical" href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/"> <!-- !!! СКОРЕЕ ВСЕГО НЕОБХОДИМА ССЫЛКА НА ЭТОТ ЖЕ ФАЙЛ-->
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1.0">
-    <meta name="amp-script-src" content="sha384-AkVhN8vmu-lbNk8wktC5YVRuCZUeb9zC3cV2flv3Mn6D5AJmLdXTSRrkRN9tLgd8">
+    <meta name="amp-script-src" content="sha384-5v4OEDiUSc_DESxe96fs87lw_EQV0Ibyctr12Lad5mR9GoGXIU5eQWJb3Nl7S5qQ">
     <style amp-custom>
         .wrapper {
             display: flex;
@@ -15,7 +15,6 @@
             margin: auto;
         }
         .form {
-            /*width: 25%;*/
             width: 480px;
             min-height: 100vh;
             padding: 70px 0 0 0;
@@ -728,8 +727,6 @@
             <script type=text/plain target=amp-script id=myScript>
 
                 let URL = "https://www.bps-sberbank.by/ccservice/CallBackOrder";
-                let maxBookingTime = 21;
-                let minBookingTime = 9;
                 let divBookingTime = document.getElementById('bookingTime');
                 let time = document.getElementById('time');
                 let setBookingTime = document.getElementById('setBookingTime');
@@ -742,16 +739,22 @@
                 let bookingAnswer = document.getElementById('bookingAnswer');
                 let reserveBookingAnswer = document.getElementById('reserveBookingAnswer');
                 let isAgreementChecked = false;
-
-                window.maxBookingTime = 21;
-
-
-                firstName.onblur = () => checkValues(firstName);
-                lastName.onblur = () => checkValues(lastName);
-                mobile.onblur = () => checkValues(mobile);
+                firstName.onblur = () => {
+                    checkValues(firstName)
+                    setDisplayBlock('button', 'block');
+                };
+                lastName.onblur = () => {
+                    checkValues(lastName)
+                    setDisplayBlock('button', 'block');
+                };
+                mobile.onblur = () => {
+                    checkValues(mobile)
+                    setDisplayBlock('button', 'block');
+                };
                 agreement.onclick = () => {
-                    if (bookingAnswer) bookingAnswer.style.display = 'none';
-                    if (reserveBookingAnswer) reserveBookingAnswer.style.display = 'none';
+                    bookingAnswer.style.display = 'none';
+                    reserveBookingAnswer.style.display = 'none';
+                    setDisplayBlock('button', 'block');
                     if (isAgreementChecked) {
                         isAgreementChecked = false;
                     } else {
@@ -759,28 +762,20 @@
                     }
                     buttonDisabled();
                 };
-
-
                 function checkValues(field) {
-                    if (bookingAnswer) bookingAnswer.style.display = 'none';
-                    if (reserveBookingAnswer) reserveBookingAnswer.style.display = 'none';
-                    if (field.value.length == false) {
-                        field.style.borderStyle='solid';
-                        field.style.borderColor='red';
-                        field.style.borderWidth='1px';
+                    bookingAnswer.style.display = 'none';
+                    reserveBookingAnswer.style.display = 'none';
+                    if (!field.value.length) {
+                        field.style.cssText = 'border: solid red 1px'
                     } else {
-                        field.style.borderStyle='solid';
-                        field.style.borderColor='#1a9f29';
-                        field.style.borderWidth='1px';
+                        field.style.cssText = 'border: solid #1a9f29 1px'
                     }
                     buttonDisabled()
                 }
-
-
                 function buttonDisabled () {
-                    if ( firstName.value.length > 0 &&
-                    lastName.value.length > 0 &&
-                    mobile.value.length > 0 &&
+                    if ( firstName.value.length &&
+                    lastName.value.length &&
+                    mobile.value.length &&
                     choosenTime && isAgreementChecked ) {
                         button.style.opacity = '1';
                         button.style.cursor = 'pointer';
@@ -789,17 +784,15 @@
                         button.style.cursor = 'no-drop';
                     }
                 }
-
                 function str0l(val, len) {
                     let strVal = val.toString();
                     while (strVal.length < len)
                         strVal = '0' + strVal;
                     return strVal;
                 }
-
                 let addBookingTime = (startTime, day) => {
                     let startBookingHour = startTime;
-                    while (startBookingHour < maxBookingTime) {
+                    while (startBookingHour < 21) {
                         let div = document.createElement('div');
                         let timeText = "С " + startBookingHour + ":00 до " + (startBookingHour + 1) + ":00";
                         div.appendChild(document.createTextNode(timeText) );
@@ -818,48 +811,39 @@
                         startBookingHour++;
                     }
                 }
-
-                if ( new Date().getHours() + 1 < maxBookingTime ) {
-                    let todaySpan = document.createElement('span');
-                    todaySpan.appendChild( document.createTextNode("Сегодня") );
-                    time.appendChild(todaySpan);
-                    let startTime = new Date().getHours() > minBookingTime ? new Date().getHours() + 1 : minBookingTime;
-                    addBookingTime(startTime, 0);
-                }
-                let tomottowSpan = document.createElement('span');
-                tomottowSpan.appendChild( document.createTextNode("Завтра") );
-                time.appendChild(tomottowSpan);
-                addBookingTime(minBookingTime, 1);
-
                 divBookingTime.onclick = () => {
+                    if ( new Date().getHours() + 1 < 21 ) {
+                        let todaySpan = document.createElement('span');
+                        todaySpan.appendChild( document.createTextNode("Сегодня") );
+                        time.appendChild(todaySpan);
+                        let startTime = new Date().getHours() >= 9 ? new Date().getHours() + 1 : 9;
+                        addBookingTime(startTime, 0);
+                    }
+                    let tomottowSpan = document.createElement('span');
+                    tomottowSpan.appendChild( document.createTextNode("Завтра") );
+                    time.appendChild(tomottowSpan);
+                    addBookingTime(9, 1);
                     if (time.style.display !== 'block') {
                         time.style.display = 'block';
                     } else {
                         time.style.display = 'none';
                     }
                 }
-
-
-
-                function setDisplayBlock (type) {
-                    if (type === "reserveBookingAnswer") reserveBookingAnswer.style.display = 'block';
-                    if (type === "bookingAnswer") bookingAnswer.style.display = 'block';
+                function setDisplayBlock (type, display) {
+                    if (type === "reserveBookingAnswer") reserveBookingAnswer.style.display = display;
+                    if (type === "bookingAnswer") bookingAnswer.style.display = display;
+                    if (type === "button") button.style.display = display;
                 }
-
-
                 let answerTimer = 0;
                 let showReserveAnswer = false;
-
                 button.onclick = () => {
-
                     if (
-                        firstName.value.length > 0 &&
-                        lastName.value.length > 0 &&
-                        mobile.value.length > 0 &&
+                        firstName.value.length &&
+                        lastName.value.length &&
+                        mobile.value.length &&
                         choosenTime && isAgreementChecked
                     ) {
                         let phone = mobile.value.replace(/\D/g, '');
-
                         let Content =`<SOAP-ENV:Envelope \txmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
                         xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -878,9 +862,7 @@
                             </m:RegisterSiteCallbackEx>
                             </SOAP-ENV:Body>
                         </SOAP-ENV:Envelope>`;
-
                         if (typeof fetch === "function") {
-
                             fetch(URL, {
                                 method: 'post',
                                 headers: {
@@ -890,47 +872,41 @@
                                 body: Content
                             })
                                 .then( () => {
-                                    console.log('success');
-                                    setDisplayBlock('bookingAnswer');
+                                    setDisplayBlock('bookingAnswer', 'block');
+                                    setDisplayBlock('button', 'none');
                                 })
                                 .catch( (msg) => console.warn('error: ', msg))
-
                         } else {
-
                             let xhr = new XMLHttpRequest();
                             xhr.open('POST', URL);
                             xhr.setRequestHeader('Content-Type', 'text/xml; charset=utf-8');
                             xhr.setRequestHeader('Accept', '*/*');
                             xhr.send(Content);
-
                             answerTimer = setTimeout( ()=> {
                                 showReserveAnswer = true;
-                                setDisplayBlock('reserveBookingAnswer');
+                                setDisplayBlock('reserveBookingAnswer', 'block');
+                                setDisplayBlock('button', 'none');
                             }, 4000)
-
                             xhr.onreadystatechange = function() {
                                 if (xhr.readyState == 4) {
                                     if (showReserveAnswer) {
                                         clearTimeout(answerTimer);
                                         answerTimer = 0;
                                         showReserveAnswer = false;
-
                                     } else {
                                         clearTimeout(answerTimer);
                                         answerTimer = 0;
-                                        setDisplayBlock('bookingAnswer');
+                                        setDisplayBlock('bookingAnswer', 'block');
+                                        setDisplayBlock('button', 'none');
                                     }
                                 }
                             };
-
-                            xhr.upload.onerror = function() {
-                                console.log('onerror');
+                            xhr.upload.onerror = function(err) {
+                                console.error('onerror: ', err);
                             };
-
                         }
                     }
                 }
-
             </script>
         </div>
 

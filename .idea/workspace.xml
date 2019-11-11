@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cb1549b-4913-4add-b2e1-73385a0fa1c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="408">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
               <folding>
                 <element signature="n#style#1;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#noscript#0;n#head#0;n#html#0;n#!!top" />
@@ -34,19 +34,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script.js">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="15" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -64,19 +55,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>war</find>
-      <find>addBookingTime</find>
-      <find>window.bookingAnswer:</find>
-      <find>divBookingTime</find>
-      <find>bookingTime</find>
-      <find>ampS</find>
-      <find>exampleDiv</find>
       <find>.ampScript</find>
       <find>ampScript</find>
       <find>sample-form</find>
       <find>example</find>
       <find>amp-form</find>
-      <find>button</find>
       <find>err</find>
       <find>error</find>
       <find>bookingAnswer</find>
@@ -84,7 +67,6 @@
       <find>978</find>
       <find>.form {</find>
       <find>input, select, .bookingTime</find>
-      <find>setDisplayBlock</find>
       <find>+375</find>
       <find>showAnswer</find>
       <find>.advantages {</find>
@@ -94,6 +76,15 @@
       <find>meta</find>
       <find>reserveBookingAnswer</find>
       <find>//</find>
+      <find>bookingTime</find>
+      <find>divBookingTime</find>
+      <find>time</find>
+      <find>buttonDisabled</find>
+      <find>button</find>
+      <find>console.log</find>
+      <find>setDisplayBlock</find>
+      <find>maxBookingTime</find>
+      <find>minBookingTime</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -108,9 +99,9 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/aaa.xml" />
         <option value="$PROJECT_DIR$/answerScript.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/script.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -126,6 +117,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,7 +129,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,7 +176,9 @@
       <updated>1571921273651</updated>
       <workItem from="1571921274756" duration="77548000" />
       <workItem from="1572417668352" duration="61742000" />
-      <workItem from="1572858217244" duration="6004000" />
+      <workItem from="1572858217244" duration="7175000" />
+      <workItem from="1573454198968" duration="249000" />
+      <workItem from="1573454461918" duration="3757000" />
     </task>
     <task id="LOCAL-00001" summary="cirrect title">
       <created>1572860957908</created>
@@ -222,18 +215,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572864621077</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cirrect path to script.js">
+      <created>1572866975131</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572866975131</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145294000" />
+    <option name="totallyTimeSpent" value="150471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49947312" weight="0.42064372" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50052685" side_tool="true" weight="0.32963374" />
@@ -260,29 +260,36 @@
     <option name="LAST_COMMIT_MESSAGE" value="cirrect path to script.js" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/aaa.xml" />
     <entry file="file://$PROJECT_DIR$/answerScript.js" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="15" selection-end-column="75" />
+        <state relative-caret-position="377">
+          <caret line="119" column="72" lean-forward="true" selection-start-line="118" selection-start-column="4" selection-end-line="119" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="408">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding>
             <element signature="n#style#1;n#head#0;n#html#0;n#!!top" />
             <element signature="n#noscript#0;n#head#0;n#html#0;n#!!top" />
@@ -291,13 +298,6 @@
             <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
